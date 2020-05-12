@@ -1,6 +1,6 @@
 package com.demo.kafka.mains.prod;
 
-import com.demo.kafka.core.producers.producers.CustomPartitionerProducer;
+import com.demo.kafka.core.producers.CustomPartitionerProducer;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

@@ -1,12 +1,12 @@
 package com.demo.kafka.mains.prod;
 
-import com.demo.kafka.core.producers.MessageProducer;
+import com.demo.kafka.core.producers.AvroProducer;
 
 import java.util.concurrent.CountDownLatch;
 
-public class MessageProducerDemo {
+public class AvroProducerDemo {
 
-    private static final String INPUT_TOPIC = "serde-topic";
+    private static final String INPUT_TOPIC = "avro-topic";
 
 
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class MessageProducerDemo {
 
         CountDownLatch prePopulateLatch = new CountDownLatch(1);
 
-        MessageProducer producerThread = new MessageProducer(INPUT_TOPIC, false, null,
+        AvroProducer producerThread = new AvroProducer(INPUT_TOPIC, false, null,
                 true, numRecords, -1, prePopulateLatch);
         producerThread.start();
 

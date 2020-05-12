@@ -1,6 +1,6 @@
 package com.demo.kafka.mains.prod;
 
-import com.demo.kafka.core.producers.producers.CustomProducer;
+import com.demo.kafka.core.producers.CustomProducer;
 import java.util.concurrent.CountDownLatch;
 
 

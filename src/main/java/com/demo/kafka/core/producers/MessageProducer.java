@@ -1,4 +1,4 @@
-package com.demo.kafka.core.producers.producers;
+package com.demo.kafka.core.producers;
 
 import com.demo.kafka.dto.Message;
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -61,6 +61,6 @@ public class MessageProducer extends Thread {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        System.out.println("SupplierProducer Completed.");
+        System.out.println("MessageProducer Completed.");
     }
 }
